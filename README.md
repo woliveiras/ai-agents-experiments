@@ -48,10 +48,26 @@ Create a `.env` file in `apps/github-qa-agent/` with your GitHub token:
 GITHUB_ACCESS_TOKEN=your_github_token_here
 ```
 
-### 5. Run the Example App
+### 5. Install Internal Utilities
+
+After installing dependencies, install the internal utility package in editable mode:
+
+```sh
+poetry run pip install -e packages/
+```
+
+### 6. Run the Example App
 
 ```sh
 poetry run python apps/github-qa-agent/main.py
+```
+
+### 7. Running Tests
+
+To run all tests (including for internal packages):
+
+```sh
+poetry run pytest
 ```
 
 ## Project Structure
