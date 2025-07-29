@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Poetry
+.pypoetry.log
+poetry.lock
+
+# IDE & Editor
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Infra and Data
+docker-compose.override.yml
+/data/chroma-db-data/
+/data/source-documents/

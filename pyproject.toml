@@ -1,0 +1,30 @@
+[project]
+name = "ai-agents-experiments"
+version = "0.1.0"
+description = "Experiments with AI agents using Ollama, LangChain, and ChromaDB."
+keywords = ["AI", "agents", "Ollama", "LangChain", "ChromaDB"]
+authors = [
+    {name = "William Oliveira", email = "w.oliveira542@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-community (>=0.3.27,<0.4.0)",
+    "langchain-core (>=0.3.72,<0.4.0)",
+    "ollama (>=0.5.1,<0.6.0)",
+    "chromadb-client (>=1.0.15,<2.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "jupyterlab (>=4.4.5,<5.0.0)",
+    "langchain-chroma (>=0.2.5,<0.3.0)",
+    "langchain-ollama (>=0.3.6,<0.4.0)",
+    "pytest (>=8.4.1,<9.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.13"

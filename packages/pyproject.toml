@@ -1,0 +1,17 @@
+[project]
+name = "ollama_utils"
+version = "0.1.0"
+description = "Utilities for initializing Ollama LLM and embedding models for LangChain apps."
+authors = [
+    {name = "William Oliveira", email = "w.oliveira542@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "langchain-ollama (>=0.3.6,<0.4.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

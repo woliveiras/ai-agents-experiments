@@ -1,0 +1,23 @@
+# version: "3.9"
+
+services:
+  # Service to run LLMs locally
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama_service
+    ports:
+      - "11434:11434" # Exposes Ollama API port to our host
+    volumes:
+      - ollama_data:/root/.ollama # Persists downloaded models
+
+  # Vector Store service
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: chromadb_service
+    ports:
+      - "8000:8000" # Exposes ChromaDB API port to our host
+    volumes:
+      - ./data/chroma-db-data:/chroma/chroma # Persists vector database data in a local folder
+
+volumes:
+  ollama_data: # Defines a named volume for Ollama, managed by Docker
