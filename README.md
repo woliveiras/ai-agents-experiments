@@ -61,6 +61,8 @@ poetry run pip install -e packages/
 ```sh
 poetry run python apps/github_qa_agent/main.py
 poetry run python apps/tree_of_thoughts_agent/main.py
+poetry run python apps/langgraph_lats_agent/main.py
+poetry run python apps/vet_crew/main.py
 ```
 
 ### 7. Running Tests
