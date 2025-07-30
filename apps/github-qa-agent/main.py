@@ -6,8 +6,6 @@ from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import GithubFileLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_ollama.chat_models import ChatOllama
-from langchain_ollama.embeddings import OllamaEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains.retrieval import create_retrieval_chain
@@ -27,8 +25,6 @@ if not GITHUB_TOKEN:
 REPO_URL = "https://github.com/woliveiras/reader-agent"
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 CHROMA_PERSIST_DIRECTORY = PROJECT_ROOT / "data" / "chroma-db-data" / "github-repo-agent"
-LLM_MODEL = "llama3:latest"
-EMBEDDING_MODEL = "nomic-embed-text"
 
 def main():
     """
