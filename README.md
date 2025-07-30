@@ -59,7 +59,7 @@ poetry run pip install -e packages/
 ### 6. Run the Apps
 
 ```sh
-poetry run python apps/github-qa-agent/main.py
+poetry run python apps/github_qa_agent/main.py
 poetry run python apps/tree_of_thoughts_agent/main.py
 ```
 
