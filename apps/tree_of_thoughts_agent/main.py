@@ -1,4 +1,7 @@
 # tree_of_thoughts_agent.py
+# This agent implements a "Tree of Thoughts" approach to problem-solving.
+# It generates multiple distinct thoughts, evaluates them, and selects the best one to pursue further.
+
 from ollama_utils import get_ollama_models
 
 def generate_thoughts(goal: str, count: int) -> list[str]:

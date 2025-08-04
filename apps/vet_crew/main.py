@@ -1,4 +1,9 @@
 # vet_crew_main.py
+# This script defines a veterinary crew of agents that triage and diagnose pet health issues.
+# It uses a local LLM to process queries and delegate tasks to specialized veterinarians based on the pet's life stage.
+# It includes a triage veterinarian who assesses the initial query and delegates to either a pediatric or adult/geriatric specialist.
+# It also includes a web search tool to gather additional information when needed.
+
 from crewai import Agent, Task, Crew, Process
 from langchain_ollama import ChatOllama
 from crewai.tools import BaseTool

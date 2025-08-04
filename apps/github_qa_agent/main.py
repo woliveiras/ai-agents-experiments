@@ -1,3 +1,8 @@
+# github_qa_agent.py
+# This agent is designed to answer questions about a specific GitHub repository.
+# It uses a vector database to store and retrieve code snippets and documentation,
+# allowing it to provide accurate and context-aware responses to user queries.
+
 import os
 import sys
 from pathlib import Path
